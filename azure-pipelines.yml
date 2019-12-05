@@ -21,7 +21,7 @@ steps:
       inputs:
         version: '2.2.x'
         packageType: runtime
-        projects:'**/*Test/*.csproj'
+        projects:'./*Test/*.csproj'
         arguments:'--configuration $(buildConfiguration)'
 
  - script: dotnet build --configuration $(buildConfiguration)
